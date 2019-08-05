@@ -29,20 +29,20 @@ public class DeloitteCaseStudy {
 
 	public static void main(String[] args) throws IOException {
 		
-		// creating multiple instances of a DeloitteCaseStudy class
+		// creating multiple instances for a DeloitteCaseStudy class
 
 		Object[] CreateInstances  = new Object[5]; 
 		for(Object i:CreateInstances){
 			i= new DeloitteCaseStudy();
 			((DeloitteCaseStudy) i).TeamsAccess((DeloitteCaseStudy)i);
 		}
-		
-		
-		
-		
-
+				
 	}
 
+	
+	
+	
+	
 	// Method to check whether file is not null,empty and not too large to read
 	public boolean FindFilesize(String fileName1) {
 		int sizeInbytes = 5000;
@@ -54,8 +54,9 @@ public class DeloitteCaseStudy {
 		}
 
 		return false;
-
 	}
+	
+	
 
 	// method to prepare the list of activities
 
@@ -74,6 +75,9 @@ public class DeloitteCaseStudy {
 
 		return actlist;
 	}
+	
+	
+	
 
 	// method to give activity Schedule for team
 
@@ -144,7 +148,8 @@ public class DeloitteCaseStudy {
 
 			}
 
-			// Finishing activity with Staff motivational speech
+			
+// Finishing activity with Staff motivational speech
 
 			DateTimeFormatter dateTimeFormatter = DateTimeFormatter
 					.ofPattern("hh:mm a");
@@ -175,6 +180,11 @@ public class DeloitteCaseStudy {
 			++teamNumber;
 		}
 	}
+	
+	
+	
+/* DeloitteCaseStudy instance  is passed TeamsAccess from this method , ActivityList and ActivityScheduleForTeam methods 
+	are called to produce the desired result  */
 	
 	public void TeamsAccess(DeloitteCaseStudy team) throws IOException {
 
